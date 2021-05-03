@@ -1,0 +1,18 @@
+button {
+  border: none;
+  display: inline-block;
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: $mainButton;
+  padding: 0.65rem 1.1rem;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  opacity: 0.75;
+  transition: 0.25s;
+  font-weight: 600;
+  color: $mainText;
+
+  &:hover {
+    opacity: 1;
+    font-size: 1.105rem;
+  }
+}

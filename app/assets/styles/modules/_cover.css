@@ -1,0 +1,16 @@
+.cover {
+  font-family: 'Julius Sans One', sans-serif;
+  position: relative;
+
+  &__cover-title {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 62%;
+    transform: translateY(-70%);
+    text-shadow: 2px 2px $mainButton;
+    font-size: 5rem;
+    color: $secondaryText;
+    font-weight: 500;
+  }
+}

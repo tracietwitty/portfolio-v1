@@ -1,13 +1,5 @@
-body {
-  background-color: #c4c4c4;
-  font-family: 'Julius Sans One', sans-serif;
-}
-
-$mainText: #381b17;
-
-header {
-  h1 {
-    color: $mainText;
-    font-family: 'Satisfy', cursive;
-  }
-}
+@import 'normalize.css';
+@import 'modules/_cover';
+@import 'base/_variables';
+@import 'base/_global';
+@import 'modules/_button';
