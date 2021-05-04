@@ -17,19 +17,18 @@
   &__logo {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.29rem;
+    left: 2%;
+    font-size: 0.8rem;
     width: 100%;
-    text-align: center;
     color: $mainText;
 
+    @mixin atSmall {
+      font-size: 1rem;
+    }
+
     @mixin atMedium {
-      font-size: 1.47rem;
+      font-size: 1.3rem;
       word-spacing: 8px;
-      left: 0;
-      text-align: left;
-      padding-left: 20px;
       transform: translateX(0);
     }
   }

@@ -12,15 +12,19 @@
     text-decoration: none;
     width: 100%;
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     font-weight: 500;
     padding-top: 50px;
     position: absolute;
-    top: 65%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: whitesmoke;
     text-shadow: 1px 1px rgb(179, 179, 179);
+
+    @mixin atSmall {
+      font-size: 3.5rem;
+    }
 
     @mixin atMedium {
       font-size: 4rem;
