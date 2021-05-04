@@ -1,16 +1,33 @@
 .cover {
   font-family: 'Julius Sans One', sans-serif;
   position: relative;
+  border-bottom: 20px solid whitesmoke;
+
+  & img {
+    filter: brightness(70%);
+    display: block;
+  }
 
   &__cover-title {
     text-decoration: none;
-    position: absolute;
-    top: 50%;
-    left: 62%;
-    transform: translateY(-70%);
-    text-shadow: 2px 2px $mainButton;
-    font-size: 5rem;
-    color: $secondaryText;
+    width: 100%;
+    text-align: center;
+    font-size: 1.7rem;
     font-weight: 500;
+    padding-top: 50px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    text-shadow: 1px 1px rgb(179, 179, 179);
+
+    @mixin atMedium {
+      font-size: 4rem;
+    }
+
+    @mixin atLarge {
+      font-size: 6rem;
+    }
   }
 }

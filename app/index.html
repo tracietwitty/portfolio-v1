@@ -15,38 +15,112 @@
     <meta name="keywords" content="Web developer portfolio" />
   </head>
   <body>
-    <header>
-      <nav>
-        <h1>Tracie <strong>Twite</strong></h1>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Blog</li>
-        </ul>
-        <button>Contact</button>
-      </nav>
-      <div class="cover">
-        <img src="assets/images/hero1.png" alt="hero image" />
-        <a href="#" class="cover__cover-title">Let's CREATE</a>
+    <header class="site-header">
+      <div class="wrapper">
+        <div class="site-header__logo">
+          <h1>Tracie <strong>Twite</strong></h1>
+        </div>
+
+        <div class="site-header__menu-icon"></div>
+        <div class="site-header__menu-content">
+          <div class="site-header__btn-container">
+            <button>Contact</button>
+          </div>
+          <nav class="primary-nav primary-nav--pull-right">
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Portfolio</li>
+              <li>Blog</li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
+    <div class="cover">
+      <picture>
+        <source
+          srcset="assets/images/hero--reg.png"
+          media="(min-width: 640px)"
+        />
+        <source
+          srcset="assets/images/hero--large.png"
+          media="(min-width: 990px)"
+        />
+        <img
+          src="assets/images/hero--small.png"
+          alt="hero image of girl on mountain"
+        />
+      </picture>
+
+      <a href="#" class="cover__cover-title wrapper">Let's CREATE</a>
+    </div>
+
     <section class="grid-1">
       <div class="item-1">
-        <img src="assets/images/aboutme.jpg" alt="about me" />
+        <picture>
+          <source
+            srcset="assets/images/aboutme--reg.png"
+            media="(min-width: 640px)"
+          />
+          <source
+            srcset="assets/images/aboutme--large.png"
+            media="(min-width: 990px)"
+          />
+          <img src="assets/images/aboutme--small.png" alt="woman at a spa" />
+        </picture>
         <a href="#">About Me</a>
       </div>
       <div class="item-2">
-        <img src="assets/images/latestprojects.jpg" alt="latest projects" />
+        <picture>
+          <source
+            srcset="assets/images/latestprojects--reg.png"
+            media="(min-width: 640px)"
+          />
+          <source
+            srcset="assets/images/latestprojects--large.png"
+            media="(min-width: 990px)"
+          />
+          <img
+            src="assets/images/latestprojects--small.png"
+            alt="woman working on laptop"
+          />
+        </picture>
         <a href="#">Latest Projects</a>
       </div>
       <div class="item-3">
-        <img src="assets/images/latestposts.jpg" alt="latest posts" />
+        <picture>
+          <source
+            srcset="assets/images/latestposts--reg.png"
+            media="(min-width: 640px)"
+          />
+          <source
+            srcset="assets/images/latestposts--large.png"
+            media="(min-width: 990px)"
+          />
+          <img
+            src="assets/images/latestposts--small.png"
+            alt="vlogging equipment on a desk"
+          />
+        </picture>
         <a href="#">Latest Posts</a>
       </div>
       <div class="item-4">
-        <img src="assets/images/hireme.jpg" alt="hire me" />
+        <picture>
+          <source
+            srcset="assets/images/hireme--reg.png"
+            media="(min-width: 640px)"
+          />
+          <source
+            srcset="assets/images/hireme--large.png"
+            media="(min-width: 990px)"
+          />
+          <img
+            src="assets/images/hireme--small.png"
+            alt="closeup of fooseball player"
+          />
+        </picture>
         <a href="#">Hire Me</a>
       </div>
       <div class="item-5">
@@ -76,7 +150,7 @@
     </section>
 
     <footer>
-      <h1>Tracie Twite</h1>
+      <h1>Tracie <strong>Twite</strong></h1>
       <nav>
         <ul>
           <li>Home</li>
