@@ -10,8 +10,11 @@
   }
 
   &__btn-container {
-    float: right;
-    padding-top: 6px;
+    @mixin atMedium {
+      float: right;
+    }
+
+    padding: 5px 0 15px 0;
   }
 
   &__logo {
@@ -47,9 +50,16 @@
   }
 
   &__menu-content {
-    display: none;
+    padding-top: 40px;
+    text-align: center;
+    background-color: #1a1112;
+    width: 100%;
 
     @mixin atMedium {
+      display: block;
+    }
+
+    &--is-visible {
       display: block;
     }
   }
