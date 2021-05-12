@@ -5,8 +5,8 @@
 
   @mixin atMedium {
     background-color: rgba(146, 145, 145, 0.4);
-    height: 75px;
-    padding: 25px 0 0 0;
+    height: 65px;
+    padding: 15px 0 0 0;
   }
 
   &__btn-container {
@@ -18,49 +18,105 @@
   }
 
   &__logo {
-    position: absolute;
     top: 0;
     left: 2%;
-    font-size: 0.8rem;
     width: 100%;
     color: $mainText;
+    font-family: 'Josephin Sans', sans-serif;
+    text-transform: uppercase;
 
     @mixin atSmall {
       font-size: 1rem;
     }
 
     @mixin atMedium {
-      font-size: 1.3rem;
-      word-spacing: 8px;
+      position: absolute;
       transform: translateX(0);
     }
   }
 
   &__menu-icon {
-    width: 22px;
-    height: 22px;
-    background-color: $mainText;
+    width: 25px;
+    height: 18px;
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 3px;
+      background-color: $mainText;
+      transform-origin: 0 0;
+      transition: transform 0.15s ease-out;
+    }
+    &__middle {
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 25px;
+      height: 3px;
+      background-color: $mainText;
+      transition: all 0.15s ease-out;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 25px;
+      height: 3px;
+      background-color: $mainText;
+      transform-origin: 0 100%;
+      transition: transform 0.15s ease-out;
+    }
 
     @mixin atMedium {
       display: none;
     }
   }
 
+  &__menu-icon--close-x {
+    &::before {
+      transform: rotate(45deg) scaleX(1) translateY(-1px);
+    }
+
+    .site-header__menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &::after {
+      transform: rotate(-45deg) scaleX(1) translateY(2px);
+    }
+  }
+
   &__menu-content {
-    padding-top: 40px;
     text-align: center;
-    background-color: #1a1112;
     width: 100%;
+    border-radius: 5px;
+    opacity: 0;
+    padding: 2px;
+    transform: scale(1.05);
+    position: relative;
+    z-index: -10;
+    transition: all 0.15s ease-out;
+    color: $mainText;
 
     @mixin atMedium {
-      display: block;
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1);
     }
 
     &--is-visible {
-      display: block;
+      opacity: 1;
+      z-index: 1;
+      background-color: $mainBackground;
+      transform: scale(1);
     }
   }
 }

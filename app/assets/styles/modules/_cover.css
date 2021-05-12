@@ -1,5 +1,4 @@
 .cover {
-  font-family: 'Julius Sans One', sans-serif;
   position: relative;
   border-bottom: 20px solid whitesmoke;
 
@@ -13,7 +12,7 @@
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 400;
     padding-top: 50px;
     position: absolute;
     top: 55%;

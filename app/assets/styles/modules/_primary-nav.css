@@ -13,17 +13,19 @@
   li {
     list-style: none;
     padding: 10px 0px 5px 10px;
-    font-size: 1.4rem;
     color: $mainText;
+    font-size: 1rem;
     opacity: 0.75;
     transition: 0.2s;
     display: flex;
     align-content: left;
+    text-transform: uppercase;
+    cursor: pointer;
 
     &:hover {
       opacity: 1;
       color: whitesmoke;
-      font-size: 1.41rem;
+      font-size: 1.005rem;
     }
 
     @mixin atMedium {
