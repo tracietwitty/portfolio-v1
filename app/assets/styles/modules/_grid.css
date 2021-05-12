@@ -1,0 +1,29 @@
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  img {
+    position: relative;
+    width: 60%;
+  }
+
+  .item-1 {
+    grid-column: span 2;
+    grid-row: 1;
+    border: 2px solid red;
+  }
+
+  .item-2 {
+    grid-column: span 1;
+  }
+
+  a {
+    position: absolute;
+    z-index: 8;
+    text-decoration: none;
+    color: $mainText;
+    font-family: inherit;
+    font-weight: bold;
+    border: 2px solid yellowgreen;
+  }
+}
